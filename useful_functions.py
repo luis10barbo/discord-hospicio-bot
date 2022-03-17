@@ -5,7 +5,7 @@ def get_random_list_value(target_list:list):
     return target_list[random.randint(0, len(target_list)-1)]
 
 def check_word_exists(word:str, text:str):
-    if f" {word}" in text or f"{word} " in text or f"{word}" == text:
+    if f" {word} " in text or f"{word}" == text:
         return True
     return False
 
