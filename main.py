@@ -75,7 +75,7 @@ class MyClient(discord.Client):
             await self.send_message(msg.channel.id, f"{user.mention}")
             
         
-        print(f"Message from {msg.author}: {msg.content}")
+        print(f"Message from guild \"{msg.channel.guild.name}\" -> {msg.author}: {msg.content}")
                         
     async def send_message(self, channel_id, msg):
         channel = client.get_channel(channel_id)
