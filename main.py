@@ -63,6 +63,9 @@ class MyClient(discord.Client):
         if check_word_exists("tuyu", msg_lower) == True:
             user : discord.User = await client.fetch_user(GHOSSERT_USER_ID)
             await self.send_message(msg.channel.id, f"{user.mention} \U0001f5ff\U0001f5ff\U0001f5ff\U0001f5ff")
+            
+        if check_word_exists("840") == True or check_word_exists("R$840") == True:
+            await self.send_message(msg.channel.id, f"Thominhas ♡\nhttps://www.guiadoscuriosos.com.br/wp-content/uploads/2021/03/default_fotoGenetica_58a1f4e712dd3_13-02-2017_16-03-19.jpg")
         
         # Willyrex functions
         if "willy" in msg_lower or check_word_exists("rex", msg_lower) == True:
