@@ -47,10 +47,10 @@ class MyClient(discord.Client):
         # Check if message is Happy Birthday
         msg_lower = str(msg.content).lower()
         if "feliz aniversario" in msg_lower.replace("á", "a"):
-            await self.send_message(msg.channel.id, f"{msg.author.mention}, **obrigado chaves.**")
+            await self.send_message(msg.channel.id, f"**obrigado chaves.**")
 
         if "obrigado chaves" in msg_lower:
-            await self.send_message(msg.channel.id, f"{msg.author.mention}, **de nada quico.**")
+            await self.send_message(msg.channel.id, f"**de nada quico.**")
         
         if check_word_exists("mix", msg_lower) == True:
             user : discord.User = await client.fetch_user(YTALLO_USER_ID)
