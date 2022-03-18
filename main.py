@@ -67,7 +67,7 @@ class MyClient(discord.Client):
         if check_word_exists("840", msg_lower) == True or check_word_exists("R$840", msg_lower) == True:
             await self.send_message(msg.channel.id, f"Thominhas ♡\nhttps://www.guiadoscuriosos.com.br/wp-content/uploads/2021/03/default_fotoGenetica_58a1f4e712dd3_13-02-2017_16-03-19.jpg")
 
-        if check_word_exists("gatinho") == True:
+        if check_word_exists("gatinho", msg_lower) == True:
             await self.send_message(msg.channel.id, get_random_list_value([
                 "https://cdn.discordapp.com/avatars/183743234084700160/0749b7015f48656a22424dc8b9cd5011.png?size=1024", 
                 "https://img-9gag-fun.9cache.com/photo/aog0nAn_460s.jpg",
