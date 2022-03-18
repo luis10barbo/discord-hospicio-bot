@@ -66,6 +66,16 @@ class MyClient(discord.Client):
             
         if check_word_exists("840", msg_lower) == True or check_word_exists("R$840", msg_lower) == True:
             await self.send_message(msg.channel.id, f"Thominhas ♡\nhttps://www.guiadoscuriosos.com.br/wp-content/uploads/2021/03/default_fotoGenetica_58a1f4e712dd3_13-02-2017_16-03-19.jpg")
+
+        if check_word_exists("gatinho") == True:
+            await self.send_message(msg.channel.id, get_random_list_value([
+                "https://cdn.discordapp.com/avatars/183743234084700160/0749b7015f48656a22424dc8b9cd5011.png?size=1024", 
+                "https://img-9gag-fun.9cache.com/photo/aog0nAn_460s.jpg",
+                "https://static.wikia.nocookie.net/floppapedia-revamped/images/b/bb/Fat_Bingus.png/revision/latest/top-crop/width/360/height/450?cb=20210729011304",
+                "https://64.media.tumblr.com/5b4dd14219f7778603f8ebd80af4910f/f1a2562118c069ab-af/s640x960/45220ef3d05c99d1c3a5fbca41cbdf2ba0697e33.jpg",
+                "https://cdn.discordapp.com/attachments/821787696217063455/953767041326809098/unknown.png",
+                "https://cdn.discordapp.com/attachments/821787696217063455/934557388122517605/938433.png",
+                                                                           ]))
         
         # Willyrex functions
         if "willy" in msg_lower or check_word_exists("rex", msg_lower) == True:
@@ -77,6 +87,7 @@ class MyClient(discord.Client):
             user : discord.User = await client.fetch_user(GUILHERME_USER_ID)
             await self.send_message(msg.channel.id, f"{user.mention}")
             
+        
         
         print(f"Message from guild \"{msg.channel.guild.name}\" -> {msg.author}: {msg.content}")
                         
