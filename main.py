@@ -55,7 +55,7 @@ class MyClient(discord.Client):
         
         if check_word_exists("mix", msg_lower) == True:
             user : discord.User = await client.fetch_user(YTALLO_USER_ID)
-            await self.send_message(msg.channel.id, f"cuidado que o {user.name} vai te pegar!")
+            await self.send_message(msg.channel.id, f"Miqqqqqqqqs galera")
 
         if check_word_exists("sus", msg_lower) == True:
             user : discord.User = await client.fetch_user(ALPHEXX_USER_ID)
