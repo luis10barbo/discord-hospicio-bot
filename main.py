@@ -5,7 +5,8 @@ from discord.ext import tasks, commands
 import get_token
 import logging
 import datetime
-import json
+from os import system
+
 
 logging.basicConfig(filename="discord.log", level=logging.DEBUG, format= "| {asctime} | {levelname:<8} > {message}", style="{",filemode="w")
 
@@ -113,4 +114,9 @@ TOKEN = open_token()
 keep_alive()
 
 client = MyClient()
-client.run(TOKEN)
+try:
+    client.run(TOKEN)
+except:
+    print("Restarting")
+    system("python restarter.py")
+    system("kill 1")
