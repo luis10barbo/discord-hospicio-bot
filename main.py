@@ -77,7 +77,18 @@ class MyClient(discord.Client):
                 "https://cdn.discordapp.com/attachments/821787696217063455/953767041326809098/unknown.png",
                 "https://cdn.discordapp.com/attachments/821787696217063455/934557388122517605/938433.png",
                                                                            ]))
-        
+            
+        if check_word_exists("pk", msg_lower) == True or check_word_exists("dumsleier", msg_lower) == True:
+            await self.send_message(msg.channel.id, get_random_list_value([
+                "https://wallpapercave.com/wp/wp8540475.jpg",
+                "https://i.pinimg.com/originals/1f/fe/ae/1ffeae5a14d7b6ecf127ba60050f8418.jpg",
+                "https://w0.peakpx.com/wallpaper/268/379/HD-wallpaper-fate-series-fate-apocrypha-anime-boys-braided-hair-fgo-femboy-bicolored-hair-black-ribbons-white-hair-pink-hair-2d-astolfo-fate-apocrypha-anime-open-mouth-purple-jacket-striped-clothing.jpg",
+                "http://3.bp.blogspot.com/_2ae6xTLKBJ8/SHoKoW4pBZI/AAAAAAAACG0/0248GAAtB94/w1200-h630-p-k-no-nu/bombado.jpg",
+                "https://cdn.myanimelist.net/images/anime/12/39497.jpg",
+                "https://www.animeunited.com.br/oomtumtu/2019/05/thumb-1920-835255.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIaePiT3vNuFEBxGJZctETv0RzY2t2UX52A&usqp=CAU"
+                                                                           ]))
+            
         # Willyrex functions
         if "willy" in msg_lower or check_word_exists("rex", msg_lower) == True:
             
