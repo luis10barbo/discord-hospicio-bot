@@ -56,16 +56,9 @@ class MyClient(discord.Client):
         if check_word_exists("mix", msg_lower):
             user : discord.User = await client.fetch_user(YTALLO_USER_ID)
             await self.send_message(msg.channel.id, f"Miqqqqqqqqs galera")
-
-        if check_word_exists("sus", msg_lower):
-            user : discord.User = await client.fetch_user(ALPHEXX_USER_ID)
-            await self.send_message(msg.channel.id, f"{user.mention}")
             
         if check_word_exists("tuyu", msg_lower):
-            user : discord.User = await client.fetch_user(GHOSSERT_USER_ID)
             await self.send_message(msg.channel.id, f"TUYUUUUUUUUUUUUUUUU??????????????? \U0001f5ff\U0001f5ff\U0001f5ff\U0001f5ff")
-            
-        
             
         if check_word_exists("840", msg_lower) or check_word_exists("R$840", msg_lower):
             await self.send_message(msg.channel.id, f"Thominhas ♡\nhttps://www.guiadoscuriosos.com.br/wp-content/uploads/2021/03/default_fotoGenetica_58a1f4e712dd3_13-02-2017_16-03-19.jpg")
@@ -140,6 +133,7 @@ class MyClient(discord.Client):
                 "https://i.insider.com/5c47554a2bdd7f391532583b?width=700",
                 "https://static.wikia.nocookie.net/berserk/images/8/8c/Nosferatu_Zodd_Mang%C3%A1.jpg/revision/latest?cb=20160308235957&path-prefix=pt-br" ,
                 "https://i.kym-cdn.com/photos/images/original/002/206/094/06b.jpg",
+                "https://cdn.discordapp.com/attachments/821787696217063455/955533707962363954/Screenshot_20220321-153056_Discord.jpg"
                                                                            ]))
             
         # Willyrex functions
