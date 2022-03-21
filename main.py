@@ -78,6 +78,9 @@ class MyClient(discord.Client):
                 "https://cdn.discordapp.com/attachments/821787696217063455/934557388122517605/938433.png",
                                                                            ]))
             
+        if check_word_exists("boga", msg_lower) == True:
+            await self.send_message(msg.channel.id, "<:christian:894703874663915541>")
+            
         if check_word_exists("pk", msg_lower) == True or "dumsleier" in msg_lower or "<@!300439218562531328>" in msg_lower:
             await self.send_message(msg.channel.id, "**Você quis dizer:**\n" + get_random_list_value([
                 "https://wallpapercave.com/wp/wp8540475.jpg",
