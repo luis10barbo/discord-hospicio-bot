@@ -53,22 +53,24 @@ class MyClient(discord.Client):
         if "obrigado chaves" in msg_lower:
             await self.send_message(msg.channel.id, f"**de nada quico.**")
         
-        if check_word_exists("mix", msg_lower) == True:
+        if check_word_exists("mix", msg_lower):
             user : discord.User = await client.fetch_user(YTALLO_USER_ID)
             await self.send_message(msg.channel.id, f"Miqqqqqqqqs galera")
 
-        if check_word_exists("sus", msg_lower) == True:
+        if check_word_exists("sus", msg_lower):
             user : discord.User = await client.fetch_user(ALPHEXX_USER_ID)
             await self.send_message(msg.channel.id, f"{user.mention}")
             
-        if check_word_exists("tuyu", msg_lower) == True:
+        if check_word_exists("tuyu", msg_lower):
             user : discord.User = await client.fetch_user(GHOSSERT_USER_ID)
             await self.send_message(msg.channel.id, f"TUYUUUUUUUUUUUUUUUU??????????????? \U0001f5ff\U0001f5ff\U0001f5ff\U0001f5ff")
             
-        if check_word_exists("840", msg_lower) == True or check_word_exists("R$840", msg_lower) == True:
+        
+            
+        if check_word_exists("840", msg_lower) or check_word_exists("R$840", msg_lower):
             await self.send_message(msg.channel.id, f"Thominhas ♡\nhttps://www.guiadoscuriosos.com.br/wp-content/uploads/2021/03/default_fotoGenetica_58a1f4e712dd3_13-02-2017_16-03-19.jpg")
 
-        if check_word_exists("gatinho", msg_lower) == True:
+        if check_word_exists("gatinho", msg_lower):
             await self.send_message(msg.channel.id, "meu gato\n" + get_random_list_value([
                 "https://cdn.discordapp.com/avatars/183743234084700160/0749b7015f48656a22424dc8b9cd5011.png?size=1024", 
                 "https://img-9gag-fun.9cache.com/photo/aog0nAn_460s.jpg",
@@ -78,10 +80,10 @@ class MyClient(discord.Client):
                 "https://cdn.discordapp.com/attachments/821787696217063455/934557388122517605/938433.png",
                                                                            ]))
             
-        if check_word_exists("boga", msg_lower) == True:
+        if check_word_exists("boga", msg_lower):
             await self.send_message(msg.channel.id, "<:christian:894703874663915541>")
             
-        if check_word_exists("pk", msg_lower) == True or "dumsleier" in msg_lower or "<@!300439218562531328>" in msg_lower:
+        if check_word_exists("pk", msg_lower) or "dumsleier" in msg_lower or "<@!300439218562531328>" in msg_lower:
             await self.send_message(msg.channel.id, "**Você quis dizer:**\n" + get_random_list_value([
                 "https://wallpapercave.com/wp/wp8540475.jpg",
                 "https://i.pinimg.com/originals/1f/fe/ae/1ffeae5a14d7b6ecf127ba60050f8418.jpg",
@@ -141,7 +143,7 @@ class MyClient(discord.Client):
                                                                            ]))
             
         # Willyrex functions
-        if "willy" in msg_lower or check_word_exists("rex", msg_lower) == True:
+        if "willy" in msg_lower or check_word_exists("rex", msg_lower):
             
             await self.send_message(msg.channel.id, f"{get_random_list_value(WILLYREX_IMAGES)}")
 
