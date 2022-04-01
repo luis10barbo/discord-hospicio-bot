@@ -110,7 +110,7 @@ class MyClient(discord.Client):
                 "https://cdn.discordapp.com/attachments/670253872345907212/954815994214363186/latest.png",
                 "https://cdn.discordapp.com/attachments/670253872345907212/954816084870037605/maxresdefault.png",
                 "https://cdn.discordapp.com/attachments/670253872345907212/954816180059766854/maxresdefault.png",
-                "https://cdn.discordapp.com/attachments/670253872345907212/954816267179687996/6d608b3608d83841a225bd44d72551b0.png"
+                "https://cdn.discordapp.com/attachments/670253872345907212/954816267179687996/6d608b3608d83841a225bd44d72551b0.png",
                 "https://i.pinimg.com/originals/6d/51/d2/6d51d25c4d9df845bdddcaaeb8eaa719.jpg" ,
                 "https://i.ytimg.com/vi/NRpNHcniTfE/maxresdefault.jpg" ,
                 "https://static.wikia.nocookie.net/metalgear/images/1/16/Venom_Snake.Motherbase.jpg/revision/latest?cb=20210324042507" ,
@@ -131,7 +131,7 @@ class MyClient(discord.Client):
                 "https://taskandpurpose.com/uploads/2020/11/19035956-1.jpg?auto=webp",
                 "https://img.ibxk.com.br/2020/05/21/21143121114239.jpg",
                 "https://i.insider.com/5c47554a2bdd7f391532583b?width=700",
-                "https://static.wikia.nocookie.net/berserk/images/8/8c/Nosferatu_Zodd_Mang%C3%A1.jpg/revision/latest?cb=20160308235957&path-prefix=pt-br" ,
+                "https://static.wikia.nocookie.net/berserk/images/8/8c/Nosferatu_Zodd_Mang%C3%A1.jpg/revision/latest?cb=20160308235957&path-prefix=pt-br",
                 "https://i.kym-cdn.com/photos/images/original/002/206/094/06b.jpg",
                 "https://cdn.discordapp.com/attachments/821787696217063455/955533707962363954/Screenshot_20220321-153056_Discord.jpg"
                                                                            ]))
