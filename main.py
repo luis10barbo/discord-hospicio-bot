@@ -144,7 +144,7 @@ class MyClient(discord.Client):
         # Guilherme functions
         if "filmin" in msg_lower:
             user : discord.User = await client.fetch_user(GUILHERME_USER_ID)
-            await self.send_message(msg.channel.id, f"{user.mention}")
+            await self.send_message(msg.channel.id, f"{user.mention}\nhttps://cdn.discordapp.com/attachments/828062235250524162/960608204973277194/unknown.png")
             
         
         
