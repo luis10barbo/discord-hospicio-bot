@@ -220,22 +220,21 @@ class MyClient(discord.Client):
             output_messages.add(f"{user.mention}\nhttps://cdn.discordapp.com/attachments/828062235250524162/960608204973277194/unknown.png")
             
         if check_word_exists("ugo", msg_lower) or check_word_exists("hugo", msg_lower):
-            # output_messages.add(get_random_list_value(["https://cdn.discordapp.com/attachments/508774752895369228/980188754583105536/28-05-2022-29.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188763827355739/28-05-2022-30.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188771951706122/28-05-2022-31.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188778113159210/28-05-2022-32.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188789827854386/28-05-2022-33.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188798040301639/28-05-2022-34.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188807850774588/28-05-2022-35.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188818944712784/28-05-2022-36.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188829510160445/28-05-2022-37.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188840813817896/28-05-2022-38.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188846576791612/28-05-2022-39.png", 
-            #                        "https://cdn.discordapp.com/attachments/508774752895369228/980188858534723635/28-05-2022-40.png"]))
             if str(msg.channel.id) != "870812505763622912":
                 output_messages.add(get_random_list_value(["manda esse comando no ximbas, duvido"]))
             else:
-                output_messages.add(get_random_list_value(["manda esse comando no ximbas, duvido"]))
+                output_messages.add(get_random_list_value(["https://cdn.discordapp.com/attachments/508774752895369228/980188754583105536/28-05-2022-29.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188763827355739/28-05-2022-30.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188771951706122/28-05-2022-31.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188778113159210/28-05-2022-32.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188789827854386/28-05-2022-33.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188798040301639/28-05-2022-34.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188807850774588/28-05-2022-35.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188818944712784/28-05-2022-36.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188829510160445/28-05-2022-37.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188840813817896/28-05-2022-38.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188846576791612/28-05-2022-39.png", 
+                                   "https://cdn.discordapp.com/attachments/508774752895369228/980188858534723635/28-05-2022-40.png"]))
         
         output_message = str()
         for message in output_messages:
